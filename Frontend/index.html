@@ -1,0 +1,772 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script>
+        // || (window.location.origin.indexOf('rtps.assam.gov.in') > -1)
+        if ((window.location.href.indexOf('www') > -1)) {
+
+            window.location = "https://sewasetu.assam.gov.in/";
+        }
+
+        var baseURL = "https://sewasetu.assam.gov.in/";
+        var siteLanguage = "en";
+    </script>
+    <meta charset="utf-8">
+    <title>Sewa Setu | Home</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta
+        content="Sewa Setu, Sewa Setu Assam, Sewa Set, Sewa Setu Assam, Right to Public Service Portal, Assam Right to Public Services Portal"
+        name="keywords">
+    <meta
+        content="Sewa Setu is an initiative of the Government of Assam to deliver the Government services at the doorsteps of the citizens."
+        name="description">
+    <meta content="National Informatics Centre, Assam" name="author">
+    <!-- Social Media-->
+    <meta property="og:title" content="Sewa Setu Assam">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://sewasetu.assam.gov.in/">
+    <meta property="og:image" content="https://sewasetu.assam.gov.in/assets/site/theme1/images/xohari.png">
+    <meta property="og:image:type" content="image/png">
+    <meta property="og:image:height" content="200">
+    <meta property="og:image:width" content="200">
+    <meta property="og:description"
+        content="Sewa Setu is an initiative of the Government of Assam to deliver the Government services at the doorsteps of the citizens.">
+
+    <meta name="twitter:title" content="Sewa Setu Assam ">
+    <meta name="twitter:description" content="Sewa Setu, Assam.">
+    <meta name="twitter:image" content="https://sewasetu.assam.gov.in/assets/site/theme1/images/xohari.png">
+    <meta name="twitter:site" content="@accsdp_assam">
+    <meta name="twitter:card" content="summary_large_image">
+    <!-- Favicon -->
+    <link href="https://sewasetu.assam.gov.in/assets/site/sewasetu/assets/images/favicon.png" rel="icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <!-- Bootstrap Icons CDN Banashree-->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+
+    <!-- Libraries Stylesheet -->
+    <link href="https://sewasetu.assam.gov.in/assets/site/sewasetu/node_modules/animate.css/animate.min.css" rel="stylesheet">
+    <link href="https://sewasetu.assam.gov.in/assets/site/sewasetu/assets/lib/owlcarousel/assets/owl.carousel.min.css"
+        rel="stylesheet">
+    <link href="https://sewasetu.assam.gov.in/assets/site/sewasetu/node_modules/lightbox/css/lightbox.min.css" rel="stylesheet">
+    <link href="https://sewasetu.assam.gov.in/assets/site/sewasetu/assets/lib/fxss-rate/rate.min.css" rel="stylesheet">
+    <!-- Framework Stylesheet -->
+    <link href="https://sewasetu.assam.gov.in/assets/site/sewasetu/node_modules/bootstrap/dist/css/bootstrap.min.css"
+        rel="stylesheet">
+    <!-- Customized Stylesheet -->
+    <link href="https://sewasetu.assam.gov.in/assets/site/theme2/css/header.css?v=2.8" rel="stylesheet">
+    <link href="https://sewasetu.assam.gov.in/assets/site/theme2/css/common.css?v=2.8" rel="stylesheet">
+    <link href="https://sewasetu.assam.gov.in/assets/site/theme2/css/home/banner.css?v=2.8" rel="stylesheet">
+    <link href="https://sewasetu.assam.gov.in/assets/site/theme2/css/home/whats_new.css?v=2.8" rel="stylesheet">
+    <link href="https://sewasetu.assam.gov.in/assets/site/theme2/css/home/track-services.css?v=2.8" rel="stylesheet">
+    <link href="https://sewasetu.assam.gov.in/assets/site/theme2/css/home/leaders.css?v=2.8" rel="stylesheet">
+    <link href="https://sewasetu.assam.gov.in/assets/site/theme2/css/home/about-us.css?v=2.8" rel="stylesheet">
+    <link href="https://sewasetu.assam.gov.in/assets/site/theme2/css/home/home-links.css?v=2.8" rel="stylesheet">
+    <link href="https://sewasetu.assam.gov.in/assets/site/theme2/css/footer.css?v=2.8" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet"> <!--Banashree-->
+    <link href="assets/css/elastic-search.css" rel="stylesheet"> <!-- Elastic Search Styles -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet"> <!-- Font Awesome -->
+
+    <link rel="stylesheet" type="text/css" href="https://sewasetu.assam.gov.in/assets/site/slick/slick.css" />
+
+    <script src="https://sewasetu.assam.gov.in/assets/plugins/jquery/jquery.min.js"></script>
+    <script src="https://sewasetu.assam.gov.in/assets/plugins/jquery-ui/jquery-ui.min.js"></script>
+
+    <script src="https://sewasetu.assam.gov.in/assets/site/theme2/js/header.js" defer></script>
+
+<script src="assets/js/sahayak.js"></script><!--Banashree-->
+
+<!-- Elastic Search Implementation -->
+<script src="assets/js/elastic-search.js"></script>
+
+</head>
+
+<body>
+    <!-- Checking JS support in the Browser -->
+    <noscript>
+        <h1 class="display-6 alert alert-danger">Please Enable Javascript to Use this Website.</h1>
+    </noscript>
+
+    <!-- Topbar Start -->
+    <div class="top-panel" style="background-color:#252525;">
+        <section class="container p-0 d-flex justify-content-between align-items-stretch flex-wrap">
+
+            <div class="py-1 px-2 govt-text d-flex justify-content-between align-content-center">
+                <div><img class="d-inline-block me-1" src="https://sewasetu.assam.gov.in/assets/site/theme1/images/govtofindia.png"
+                        alt="indian flag" width="16">
+                    <span class="small text-uppercase govt-title" style="color: #fff;">Government of assam</span>
+                </div>
+                <span class="v-bar d-none d-md-block" style="color: #fff;"> | </span>
+
+                <a href="https://sewasetu.assam.gov.in/site/old" style="color: #fff;" class="text-decoration-none">
+                    <span class="small">View older version</span>
+                </a>
+            </div>
+
+            <!-- GIGW Modifications -->
+            <section class="top-align d-none d-md-flex align-items-stretch">
+
+                <div class="d-flex justify-content-between">
+
+                    <a class="top2 sitemap p-2 me-1" href="https://sewasetu.assam.gov.in/site/sitemap" style="color: #fff;"
+                        title="Site map" title="Sitemap">
+                        <i class="bi bi-diagram-3-fill"></i>
+                        <span style="border-right:1px solid #EBEBEB;margin-left: 1rem;"></span>
+                    </a>
+
+                    <a class="screen-reader p-2 me-1 text-decoration-none d-none d-md-block" href="https://sewasetu.assam.gov.in/site/screen_reader" style="color: #fff;"
+                        title="Screen reader">
+                        <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTciIGhlaWdodD0iMTgiIHZpZXdCb3g9IjAgMCAxNyAxOCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTEuODU2MjcgMTcuMTU5M0MxLjQ0MDY3IDE3LjE1OTMgMS4wODU3MSAxNy4wMTIxIDAuNzkxMzc0IDE2LjcxNzhDMC40OTcwMjcgMTYuNDIzNCAwLjM0OTg1NCAxNi4wNjg1IDAuMzQ5ODU0IDE1LjY1MjlWMi44MzI0M0MwLjM0OTg1NCAyLjQxNjgzIDAuNDk3MDI3IDIuMDYxODYgMC43OTEzNzQgMS43Njc1M0MxLjA4NTcxIDEuNDczMTggMS40NDA2NyAxLjMyNjAxIDEuODU2MjcgMS4zMjYwMUg4Ljc1NTI1TDcuNTA1MjkgMi41NzU5OUgxLjg1NjI3QzEuNzgxNDggMi41NzU5OSAxLjcyMDA0IDIuNjAwMDMgMS42NzE5NiAyLjY0ODExQzEuNjIzODcgMi42OTYyIDEuNTk5ODMgMi43NTc2NCAxLjU5OTgzIDIuODMyNDNWMTUuNjUyOUMxLjU5OTgzIDE1LjcyNzcgMS42MjM4NyAxNS43ODkxIDEuNjcxOTYgMTUuODM3MkMxLjcyMDA0IDE1Ljg4NTMgMS43ODE0OCAxNS45MDkzIDEuODU2MjcgMTUuOTA5M0gxMC41MTAxQzEwLjU4NDkgMTUuOTA5MyAxMC42NDYzIDE1Ljg4NTMgMTAuNjk0NCAxNS44MzcyQzEwLjc0MjUgMTUuNzg5MSAxMC43NjY1IDE1LjcyNzcgMTAuNzY2NSAxNS42NTI5VjEzLjYxNzdIMTIuMDE2NVYxNS42NTI5QzEyLjAxNjUgMTYuMDY4NSAxMS44NjkzIDE2LjQyMzQgMTEuNTc1IDE2LjcxNzhDMTEuMjgwNiAxNy4wMTIxIDEwLjkyNTcgMTcuMTU5MyAxMC41MTAxIDE3LjE1OTNIMS44NTYyN1pNMy40NzQ4NSAxNC4wMzQzVjEyLjc4NDNIOC44OTE0OFYxNC4wMzQzSDMuNDc0ODVaTTMuNDc0ODUgMTEuNjMwNVYxMC4zODA1SDcuMjI0ODFWMTEuNjMwNUgzLjQ3NDg1Wk0xMC41NTgxIDExLjMxNzlMNy41MjEzMSA4LjI4MTEySDUuMTQxNTJWNC41MzExNEg3LjUyMTMxTDEwLjU1ODEgMS40OTQzVjExLjMxNzlaTTEyLjIyNDggOS4wNjQ3NlYzLjc0NzQ5QzEyLjY4NzQgNC4wMzM4MSAxMy4wNDYxIDQuNDE0OTUgMTMuMzAwOSA0Ljg5MDkxQzEzLjU1NTcgNS4zNjY4NyAxMy42ODMxIDUuODcxOTMgMTMuNjgzMSA2LjQwNjEyQzEzLjY4MzEgNi45NDAzIDEzLjU1NDQgNy40NDUzNyAxMy4yOTY5IDcuOTIxMzVDMTMuMDM5NCA4LjM5NzMgMTIuNjgyMSA4Ljc3ODQ0IDEyLjIyNDggOS4wNjQ3NlpNMTIuMjI0OCAxMi40OTU4VjExLjE3ODZDMTMuMTM4MyAxMC43OTkzIDEzLjg4NzUgMTAuMTc0NiAxNC40NzI0IDkuMzA0MzdDMTUuMDU3MyA4LjQzNDE3IDE1LjM0OTggNy40NjgwOSAxNS4zNDk4IDYuNDA2MTJDMTUuMzQ5OCA1LjM0NDE2IDE1LjA1NzMgNC4zNzgwOCAxNC40NzI0IDMuNTA3ODlDMTMuODg3NSAyLjYzNzY5IDEzLjEzODMgMi4wMTI5NiAxMi4yMjQ4IDEuNjMzNjhWMC4zMTY0MDZDMTMuNDg3NiAwLjcxODExNSAxNC41MzI1IDEuNDc5MzMgMTUuMzU5NCAyLjYwMDA1QzE2LjE4NjMgMy43MjA3OCAxNi41OTk4IDQuOTg5NDYgMTYuNTk5OCA2LjQwNjEyQzE2LjU5OTggNy44MjI3OCAxNi4xODYzIDkuMDkxNDggMTUuMzU5NCAxMC4yMTIyQzE0LjUzMjUgMTEuMzMyOSAxMy40ODc2IDEyLjA5NDEgMTIuMjI0OCAxMi40OTU4WiIgZmlsbD0id2hpdGUiLz48L3N2Zz4=" alt="Screen reader" style="height: 1rem;margin-bottom: .2rem;">
+                        Screen reader                        <span style="border-right:1px solid #EBEBEB;margin-left: 1rem;"></span>
+                    </a>
+
+                </div>
+
+                <div class="d-flex justify-content-between">
+
+                    <!-- GIGW Modifications -->
+                    <a class="track p-2 small skip text-decoration-none" href="#main-content" style="color: #fff;">
+                        Skip to Main Content                        <span style="margin-left: 1rem;"></span>
+                    </a>
+
+                    <div class="top1 dropdown language me-1" style="background-color: rgba(255, 255, 255, 0.15);">
+                        <button class="btn btn-sm dropdown-toggle pb-0 pt-2 small  topbt2 d-flex align-items-center gap-1" style="color: #fff;"
+                            type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <mask id="mask0_1011_6898" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="20" height="20">
+                                    <rect width="20" height="20" fill="#D9D9D9" />
+                                </mask>
+                                <g mask="url(#mask0_1011_6898)">
+                                    <path d="M9.1875 18.2913C7.04861 18.083 5.26389 17.1872 3.83333 15.6038C2.40278 14.0205 1.6875 12.1525 1.6875 9.99967C1.6875 7.8469 2.40278 5.97884 3.83333 4.39551C5.26389 2.81217 7.04861 1.91634 9.1875 1.70801V4.20801C7.74306 4.40245 6.54861 5.04829 5.60417 6.14551C4.65972 7.24273 4.1875 8.52745 4.1875 9.99967C4.1875 11.4719 4.65972 12.7566 5.60417 13.8538C6.54861 14.9511 7.74306 15.5969 9.1875 15.7913V18.2913ZM10.8542 18.2913V15.7913C12.1597 15.6247 13.2639 15.083 14.1667 14.1663C15.0694 13.2497 15.6181 12.1386 15.8125 10.833H18.3125C18.1181 12.8191 17.3229 14.5101 15.9271 15.9059C14.5312 17.3018 12.8403 18.0969 10.8542 18.2913ZM15.8125 9.16634C15.6181 7.86079 15.0694 6.74967 14.1667 5.83301C13.2639 4.91634 12.1597 4.37467 10.8542 4.20801V1.70801C12.8403 1.90245 14.5312 2.69759 15.9271 4.09342C17.3229 5.48926 18.1181 7.18023 18.3125 9.16634H15.8125Z" fill="white" />
+                                </g>
+                            </svg>
+                            <span>Track</span>
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1" style="min-width: auto;">
+                            <li><a class="dropdown-item small" href="https://sewasetu.assam.gov.in/site/trackappstatus">Services</a></li>
+                            <li><a class="dropdown-item small" href="https://sewasetu.assam.gov.in/grm-v2/trackstatus">Grievances</a></li>
+                            <li><a class="dropdown-item small" href="https://sewasetu.assam.gov.in/site/trackappealstatus">Appeals</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="top1 dropdown language me-1">
+                        <button class="btn btn-sm dropdown-toggle pb-0 pt-2 small  topbt2" style="color: #fff;"
+                            type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                            English                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1" style="min-width: auto;">
+                            <li><a class="dropdown-item small" href="https://sewasetu.assam.gov.in/site/lang/en">English</a></li>
+                            <li><a class="dropdown-item small" href="https://sewasetu.assam.gov.in/site/lang/as">অসমীয়া</a></li>
+                        </ul>
+                    </div>
+
+                </div>
+
+            </section>
+
+            <!-- Icons for mobile view -->
+            <section class="px-2 w-100 d-flex d-md-none justify-content-between" style="background-color: #145CA6;">
+
+                <div class="dropdown language py-1 small">
+                    <a class="nav-link dropdown-toggle" id="dropdownMenuButton1" style="color: #fff;"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="bi bi-globe2"></i> <span>English</span>
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1" style="min-width: auto;">
+                        <li><a class="dropdown-item" href="https://sewasetu.assam.gov.in/site/lang/en">English</a></li>
+                        <li><a class="dropdown-item" href="https://sewasetu.assam.gov.in/site/lang/as">অসমীয়া</a></li>
+                    </ul>
+                </div>
+
+                <div class="d-flex align-items-center gap-1">
+                    <div class="nav-item dropdown small">
+                        <a class="nav-link dropdown-toggle px-2 d-flex justify-content-center align-items-center gap-1 text-decoration-none" style="height: 100%; color: #fff; border-left: 1px solid gray; border-right: 1px solid gray;" href="#" id="navbarDarkDropdownMenuLink"
+                            role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <mask id="mask0_1011_6898" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="20" height="20">
+                                    <rect width="20" height="20" fill="#D9D9D9" />
+                                </mask>
+                                <g mask="url(#mask0_1011_6898)">
+                                    <path d="M9.1875 18.2913C7.04861 18.083 5.26389 17.1872 3.83333 15.6038C2.40278 14.0205 1.6875 12.1525 1.6875 9.99967C1.6875 7.8469 2.40278 5.97884 3.83333 4.39551C5.26389 2.81217 7.04861 1.91634 9.1875 1.70801V4.20801C7.74306 4.40245 6.54861 5.04829 5.60417 6.14551C4.65972 7.24273 4.1875 8.52745 4.1875 9.99967C4.1875 11.4719 4.65972 12.7566 5.60417 13.8538C6.54861 14.9511 7.74306 15.5969 9.1875 15.7913V18.2913ZM10.8542 18.2913V15.7913C12.1597 15.6247 13.2639 15.083 14.1667 14.1663C15.0694 13.2497 15.6181 12.1386 15.8125 10.833H18.3125C18.1181 12.8191 17.3229 14.5101 15.9271 15.9059C14.5312 17.3018 12.8403 18.0969 10.8542 18.2913ZM15.8125 9.16634C15.6181 7.86079 15.0694 6.74967 14.1667 5.83301C13.2639 4.91634 12.1597 4.37467 10.8542 4.20801V1.70801C12.8403 1.90245 14.5312 2.69759 15.9271 4.09342C17.3229 5.48926 18.1181 7.18023 18.3125 9.16634H15.8125Z" fill="white" />
+                                </g>
+                            </svg>
+                            <span>Track</span> </a>
+
+                        <div class="dropdown-menu" aria-labelledby="navbarDarkDropdownMenuLink">
+                            <a class="dropdown-item text-capitalize dash"
+                                href="https://sewasetu.assam.gov.in/site/trackappstatus">Services                            </a>
+                            <a class="dropdown-item text-capitalize dash"
+                                href="https://sewasetu.assam.gov.in/grm-v2/trackstatus">Grievances                            </a>
+                            <a class="dropdown-item text-capitalize dash"
+                                href="https://sewasetu.assam.gov.in/site/trackappealstatus">Appeals                            </a>
+                        </div>
+                    </div>
+
+                    <!-- for logged in user -->
+                                            <div class="dropdown nav-item small">
+                            <a style="height: 100%; display: flex; justify-content: center; align-items: center; color: #fff" class="nav-link dropdown-toggle " href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <i class="bi bi-person-fill"></i> <span>Login/ Register</span>
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <a class="dropdown-item" href="https://sewasetu.assam.gov.in/iservices/ssologin/citizenlogin">Citizen</a>
+                                <a class="dropdown-item" href="https://sewasetu.assam.gov.in/iservices/ssologin/pfclogin">PFC</a>
+                                <a class="dropdown-item" href="https://sewasetu.assam.gov.in/iservices/admin/CSC_Auth/initiate">CSC</a>
+                                <a class="dropdown-item" href="https://sewasetu.assam.gov.in/spservices/upms/login">Officials</a>
+                            </div>
+                        </div>
+                                    </div>
+
+            </section>
+
+
+        </section>
+    </div>
+    <!-- Topbar End -->
+
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-lg p-0 desktop-transparent">
+        <div class="container">
+            <div class="d-flex justify-content-md-between align-items-center position-relative pt-2 pb-2">
+                <div class="rim-parallel"><a href="https://sewasetu.assam.gov.in/site/" class="second-rim-logo px-lg-2"><img class="emb-logo" src="https://sewasetu.assam.gov.in/assets/site/sewasetu/assets/images/indiaemblem.png"
+                            id="emblem" alt="Emblem" height="60" width="55"></a></div>
+                <div class="vr"></div>
+                <img class="emb-logo-sewasetu" style="margin-left: 5px;" src="https://sewasetu.assam.gov.in/assets/site/sewasetu/assets/images/SS_LOGO.png"
+                    alt="Emblem" height="60" width="60">
+                <div class="heading-text" style="margin-left: 10px;">
+                    <h2 class="emb fw-bold mb-0"> Sewa Setu </h2>
+                    <h6 class="mb-0">
+                        A Comprehensive Citizen Platform                    </h6>
+                </div>
+
+                <a href="https://sewasetu.assam.gov.in/site/" class="stretched-link"></a>
+
+            </div>
+            <button type="button" class="navbar-toggler rounded-circle" data-bs-toggle="collapse"
+                data-bs-target="#navbarCollapse">
+                <span><i class="bi bi-list fs-1" id="navbar-colllapse-icon"></i></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav ms-auto p-4 p-lg-0 gap-4">
+
+
+                    <a href="https://sewasetu.assam.gov.in/site/" class="nav-item nav-link">
+                        Home                    </a>
+
+                    <a href="https://sewasetu.assam.gov.in/site/about" class="nav-item nav-link">
+                        About                    </a>
+
+                    <!-- Services -->
+                    <a href="https://sewasetu.assam.gov.in/site/online" class="nav-item nav-link">
+                        Services                    </a>
+
+                    <!-- RTPS Dashboard Link -->
+                    <div class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle dashboard-nav-item" href="#" id="navbarDarkDropdownMenuLink"
+                            role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Dashboard </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDarkDropdownMenuLink">
+                            <a rel="noopener noreferrer" class="dropdown-item text-capitalize dash"
+                                href="https://sewasetu.assam.gov.in/dashboard">
+                                Citizen </a> </a>
+                            <a rel="noopener noreferrer" class="dropdown-item text-capitalize dash"
+                                href="https://sewasetu.assam.gov.in/dashboard/login">
+                                State Administrator </a>
+                            <a rel="noopener noreferrer" class="dropdown-item text-capitalize dash"
+                                href="https://sewasetu.assam.gov.in/dashboard/login">
+                                Department/Council Administrator </a>
+
+                            <a rel="noopener noreferrer" class="dropdown-item text-capitalize dash"
+                                href="https://sewasetu.assam.gov.in/dashboard/dlogin">
+                                Office Login </a>
+
+                            <a rel="noopener noreferrer" class="dropdown-item text-capitalize dash"
+                                href="https://sewasetu.assam.gov.in/dashboard/login">
+                                District Administrator </a>
+
+                            <a rel="noopener noreferrer" class="dropdown-item text-capitalize dash"
+                                href="https://sewasetu.assam.gov.in/dashboard/login">
+                                CSCSPV Login                            </a>
+                        </div>
+                    </div>
+
+                    <!-- for logged in user -->
+                                            <div class="dropdown nav-item">
+                            <a style="height: 35px; display: flex; justify-content: center; align-items: center;" class="nav-link dropdown-toggle btn login-register-button" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Login/ Register                            </a>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <a class="dropdown-item" href="https://sewasetu.assam.gov.in/iservices/ssologin/citizenlogin">Citizen</a>
+                                <a class="dropdown-item" href="https://sewasetu.assam.gov.in/iservices/ssologin/pfclogin">PFC</a>
+                                <a class="dropdown-item" href="https://sewasetu.assam.gov.in/iservices/admin/CSC_Auth/initiate">CSC</a>
+                                <a class="dropdown-item" href="https://sewasetu.assam.gov.in/spservices/upms/login">Officials</a>
+                            </div>
+                        </div>
+                    
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- Navbar End -->
+
+
+    <!-- Track Model -->
+
+    <div class="modal fade" id="trackModal" tabindex="-1" aria-labelledby="trackModal" aria-hidden="true"
+        data-bs-keyboard="true">
+
+        <div class="modal-dialog">
+            <div class="track-dark modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title"><i class="bi bi search" aria-hidden="true"
+                            style="margin-right: 5px;"></i>Track Status</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="track-text">
+                        <h5>Select what you would like to track to proceed</h5>
+                        <a href="https://sewasetu.assam.gov.in/site/trackappstatus" class="btn rtps-btn-alt">
+                            Services                        </a>
+                    </div>
+                    <br>
+                    <div class="track-links">
+                        <a href="https://sewasetu.assam.gov.in/site/trackappealstatus" class="btn btn-rtps">
+                            Appeals                        </a>
+                        <a href="https://sewasetu.assam.gov.in/grm/trackstatus" class="btn btn-rtps">
+                            Grievances                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!-- Modal Ends -->
+
+    <!-- New Login Model -->
+
+    <div class="modal fade" id="loginModalSite" tabindex="-1" aria-labelledby="loginModalSIte" aria-hidden="true"
+        data-bs-keyboard="true">
+
+        <div class="modal-dialog">
+            <div class="loginsite-dark modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title"><i class="fa fa-sign-in" aria-hidden="true"
+                            style="margin-right: 5px;"></i>LOGIN/ REGISTER</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="login-text">
+                        <h5>Select your user type to proceed</h5>
+                        <a href="https://sewasetu.assam.gov.in/iservices/ssologin/citizenlogin" class="btn rtps-btn-alt">
+                            Citizen                        </a>
+                    </div>
+                    <br>
+                    <div class="login-links">
+                        <a href="https://sewasetu.assam.gov.in/iservices/ssologin/pfclogin" class="btn rtps-btn">
+                            PFC                        </a>
+                        <a href="https://sewasetu.assam.gov.in/iservices/admin/CSC_Auth/initiate" class="btn btn-rtps">
+                            CSC                        </a>
+                        <a href="https://sewasetu.assam.gov.in/spservices/upms/login" class="btn btn-rtps">
+                            Officials                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+    <!-- Modal Ends -->
+
+
+
+
+    <!-- Login Model -->
+
+    <div class="modal fade" id="loginModel" tabindex="-1" aria-labelledby="loginModel" aria-hidden="true"
+        data-bs-keyboard="true">
+
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="login-model modal-header">
+                    <h5 class="modal-title">Please Login</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="login-model modal-body p-0"></div>
+                <div class="login-model modal-footer">
+                    <button type="button" class="btn btn-rtps" data-bs-dismiss="modal">
+                        Close                    </button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!-- Modal Ends -->
+
+
+    <!-- Generic Model -->
+    <div class="modal fade" id="footerModal" tabindex="-1" aria-labelledby="footerModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable modal-sm">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="footerModalLabel"></h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body"></div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-rtps" data-bs-dismiss="modal">
+                        Close                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal Ends -->
+
+    <!-- New Login Popup -->
+    <div class="modal fade" id="newLoginModel" tabindex="-1" aria-labelledby="newLoginModel" aria-hidden="true"
+        data-bs-keyboard="true">
+
+        <div class="modal-dialog">
+            <div class="modal-content logmodal">
+                <div class="modal-header">
+                    <h6 class="modal-title">Please Select One</h6>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+
+                <!-- New Login Tabs -->
+                <div class="modal-body">
+
+                    <!-- Official Logins -->
+                    <details id="nav-official" open>
+                        <summary class="bg-info fw-bold p-2 rounded text-center teal my-0">
+                            Officials Login                        </summary>
+
+                        <ul>
+                            
+                                <li class="list-unstyled my-2">
+                                    <input type="radio" class="form-check-input me-2" name="officeLogin"
+                                        id="offL1">
+                                    <label class="form-check-label" for="offL1">Deputy Commissioners Office</label>
+                                </li>
+
+                            
+                                <li class="list-unstyled my-2">
+                                    <input type="radio" class="form-check-input me-2" name="officeLogin"
+                                        id="offL2">
+                                    <label class="form-check-label" for="offL2">Circle Office</label>
+                                </li>
+
+                            
+                                <li class="list-unstyled my-2">
+                                    <input type="radio" class="form-check-input me-2" name="officeLogin"
+                                        id="offL3">
+                                    <label class="form-check-label" for="offL3">Others</label>
+                                </li>
+
+                                                    </ul>
+
+                        <button style="font-size: smaller;" type="button" id="officialLogin"
+                            class="btn rtps-btn-alt d-inline-block mt-2">Login</button>
+
+                    </details>
+
+
+
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+    <!-- Modal Ends -->
+<link href="https://sewasetu.assam.gov.in/assets/site/theme2/css/faq.css?v=2.8" rel="stylesheet">
+<link href="https://sewasetu.assam.gov.in/assets/site/theme2/css/knowledge-management.css?v=2.8" rel="stylesheet">
+<link href="https://sewasetu.assam.gov.in/assets/site/theme2/css/popular-services.css?v=2.8" rel="stylesheet">
+<link href="https://sewasetu.assam.gov.in/assets/site/theme2/css/footer-slider.css?v=2.8" rel="stylesheet">
+
+<main id="main-content">
+    
+<div class="banner">
+    <video autoplay muted loop disablepictureinpicture height="100px" width="200px" class="banner-video">
+        <source src="https://sewasetu.assam.gov.in/assets/site/theme2/assets/videos/assam.mov" type="video/mp4">
+    </video>
+
+    <div class="banner-content">
+        <p class="banner-content-header mb-4">Welcome to <span>Sewa Setu</span></p>
+        <p class="banner-content-text">
+            Empowering Citizens of Assam with Seamless Access to Government Services        </p>
+
+        <div class="search-section">
+            <div class="search-container">
+                <i class="fas fa-search search-icon"></i>
+                <input type="text" class="search-input" placeholder="Search for government services..." id="searchInput">
+                <button class="search-btn" onclick="performSearch()">
+                    <i class="fas fa-search"></i> Search
+                </button>
+            </div>
+        </div>
+
+        <div class="loading" id="loading">
+            <i class="fas fa-spinner"></i>
+            <p>Searching services...</p>
+        </div>
+
+        <div class="results-section" id="resultsSection">
+            <!-- Added a wrapper div to help with event isolation -->
+            <div class="results-modal-wrapper">
+                <div class="results-modal">
+                    <button id="modalCloseBtn" class="modal-close-btn" aria-label="Close search results" type="button">
+                        <i class="fas fa-times"></i>
+                    </button>
+                    <div class="results-header">
+                        <div class="results-count" id="resultsCount"></div>
+                    </div>
+                    <div class="results-content">
+                        <div id="resultsContainer"></div>
+                    </div>
+                    <div class="pagination" id="pagination"></div>
+                </div>
+            </div>
+        </div>
+              
+              <!-- Added by Banashree -->
+    <div class="ai-gif-container">
+        <a href="maitree/index.html" >
+            <img src="assets/images/ai.gif" alt="AI Chatbot" class="ai-gif mx-auto d-block" title="Sewa Setu AI Sahayak">
+        </a>
+    </div>
+    <!--End-->
+        </div>
+
+    </div>
+
+    <div class="banner-line-top"></div>
+    <div class="banner-line-bottom"></div>
+</div>
+    <!-- Added by Banashree -->
+    <div class="modal fade shadow-lg" id="chatbotModal" tabindex="-1" aria-labelledby="chatbotModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="chatbot-container">
+                    <div class="chat-header d-flex justify-between align-items-center">
+                        <img src="assets/images/SS_LOGO.png" alt="Sewa Setu Logo" style="width: 40px;">
+                        Setu AI Sahayak
+                        <button type="button" class="close-btn" data-bs-dismiss="modal" aria-label="Close">&times;</button>
+                    </div>
+                    <div class="chat-box" id="chat-box"></div>
+                    <div class="chat-input-container">
+                        <input type="text" id="chat-input" placeholder="Type a message..." onkeypress="handleKeyPress(event)"/>
+                        <button onclick="sendMessage()">Send</button>
+                    </div>
+                </div>
+                       </div>
+        </div>
+    </div>
+    
+  <!--End-->
+<script src="https://sewasetu.assam.gov.in/assets/site/theme2/js/home/banner.js" defer></script>
+    <div class="shadow-sm">
+<div class="whats-new overflow-hidden py-3 d-flex align-items-center justify-content-between">
+    <div class="d-flex align-items-center gap-2 p-2">
+        <img src="https://sewasetu.assam.gov.in/assets/site/theme2/assets/images/whats-new.svg" alt="whats new">
+        <p class="m-0 text-nowrap">WHAT'S NEW</p>
+    </div>
+
+    <div id="customCarousel" class="carousel slide d-flex align-items-center" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <p class="text-center mb-0">e-Khazana, launched by the Government of Assam on July 1, 2024, is now live on Sewa Setu!</p>
+      </div>
+      <div class="carousel-item">
+        <p class="text-center mb-0">Convenient GMC Property Tax payment — Now just click away on Sewa Setu!</p>
+      </div>
+      <div class="carousel-item">
+        <p class="text-center mb-0">Choose Auto or Manual Appeal—Sewa Setu redefines ARTPS appeals with ease and efficiency!</p>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#customCarousel" data-bs-slide="prev">
+      <span aria-hidden="true" class="mb-1">&#8249;</span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#customCarousel" data-bs-slide="next">
+      <span aria-hidden="true" class="mb-1">&#8250;</span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+    <a href="https://sewasetu.assam.gov.in/site/whats_new" class="btn btn-outline-dark" style="min-width: fit-content;">
+        View more    </a>
+
+</div>
+</div>    
+
+</main>
+<footer>
+    <div class="container-fluid wow fadeIn need-support" data-wow-delay="0.1s">
+        <div class="container py-4 py-md-5">
+            <div class="row">
+                <div class="col-md-6 mb-4 mb-md-0">
+                    <a href="https://sewasetu.assam.gov.in/site/contact" class="no-underline">
+                        <h2>Need Support</h2>
+                        <div>Reach out to us, and we'll be happy to help you !</div>
+                    </a>
+                </div>
+                <div class="col-md-6 text-md-end d-flex align-items-center justify-content-end">
+                    <a href="https://sewasetu.assam.gov.in/site/contact" class="get-in-touch-btn">
+                        Contact Us                        <i class="bi bi-arrow-up-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid wow fadeIn links" data-wow-delay="0.1s">
+        <div class="container py-4 py-md-5">
+            <div class="row">
+                <div class="col-md-3 text-center text-md-start no-select">
+                    <div>
+                        <img class="footer-logo" src="https://sewasetu.assam.gov.in/assets/site/theme2/assets/images/logo-footer.png"
+                            alt="sewasetu">
+                    </div>
+                    <div class="social-icons">
+                        <a target="_blank" href="https://www.facebook.com/accsdp.assam">
+                            <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNSIgaGVpZ2h0PSIxMCIgdmlld0JveD0iMCAwIDUgMTAiIGZpbGw9IiNGRkZGRkYiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0xLjEwNTI2IDUuMDM5NzNWOS44NzQ2OUMxLjEwNTI2IDkuOTQ0OTkgMS4xNjQ0NyAxMCAxLjI0MDEzIDEwSDMuMTcxMDVDMy4yNDY3MSAxMCAzLjMwNTkyIDkuOTQ0OTkgMy4zMDU5MiA5Ljg3NDY5VjQuOTYwMjdINC43MDcyNEM0Ljc3NjMyIDQuOTYwMjcgNC44MzU1MyA0LjkxMTM3IDQuODQyMTEgNC44NDQxM0w0Ljk3Njk4IDMuMzY0OTFDNC45ODM1NiAzLjI5MTU2IDQuOTIxMDYgMy4yMjczOCA0Ljg0MjExIDMuMjI3MzhIMy4zMDU5MlYyLjE3NjA0QzMuMzA1OTIgMS45Mjg0OCAzLjUxOTc0IDEuNzI5ODMgMy43ODYxOSAxLjcyOTgzSDQuODY1MTRDNC45NDA4IDEuNzI5ODMgNSAxLjY3NDgyIDUgMS42MDQ1MlYwLjEyNTMwMkM1IDAuMDU1MDA4NyA0Ljk0MDggMCA0Ljg2NTE0IDBIMy4wMzk0N0MxLjk3MDM5IDAgMS4xMDE5OCAwLjgwNjg0NiAxLjEwMTk4IDEuODAwMTJWMy4yMjczOEgwLjEzNDg3QzAuMDU5MjExOCAzLjIyNzM4IDAgMy4yODI0IDAgMy4zNTI2OVY0LjgzMTkxQzAgNC45MDIyIDAuMDU5MjExOCA0Ljk1NzIxIDAuMTM0ODcgNC45NTcyMUgxLjEwMTk4VjUuMDM2NjdMMS4xMDUyNiA1LjAzOTczWiIgZmlsbD0id2hpdGUiLz48L3N2Zz4="
+                                alt="Facebook">
+                        </a>
+                        <a target="_blank" href="https://twitter.com/accsdp_assam?s=08">
+                            <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAiIGhlaWdodD0iMTAiIHZpZXdCb3g9IjAgMCAxMCAxMCIgZmlsbD0iI0ZGRkZGRiIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJNNS45NTEzNiA0LjIzNDMxTDkuNjc0MDggMEg4Ljc5MTkyTDUuNTU5NDcgMy42NzY2TDIuOTc3NzMgMEgwTDMuOTA0MDkgNS41NTk2NkwwIDEwSDAuODgyMjE4TDQuMjk1NzcgNi4xMTczOUw3LjAyMjI3IDEwSDEwTDUuOTUxMzYgNC4yMzQzMVpNMS4yMDAwOSAwLjY0OTg0NkgyLjU1NTExTDguNzkyMzIgOS4zNzk3MUg3LjQzNzI5TDEuMjAwMDkgMC42NDk4NDZaIiBmaWxsPSJ3aGl0ZSIvPjwvc3ZnPg=="
+                                alt="Twitter">
+                        </a>
+                        <a target="_blank" href="https://www.instagram.com/accsdp__assam/?igshid=8mxmsmaq019b">
+                            <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAiIGhlaWdodD0iMTAiIHZpZXdCb3g9IjAgMCAxMCAxMCIgZmlsbD0iI0ZGRkZGRiIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJNNy42Mjk4MiAxLjgzOTc2QzcuMzA1OTggMS44Mzk3NiA3LjA0MDc2IDIuMTAyMTggNy4wNDA3NiAyLjQyODgxQzcuMDQwNzYgMi43NTU0NSA3LjMwMzE5IDMuMDE3ODcgNy42Mjk4MiAzLjAxNzg3QzcuOTU2NDUgMy4wMTc4NyA4LjIxODg3IDIuNzU1NDUgOC4yMTg4NyAyLjQyODgxQzguMjE4ODcgMi4xMDIxOCA3Ljk1NjQ1IDEuODM5NzYgNy42Mjk4MiAxLjgzOTc2Wk01LjAxNjc1IDIuNTkzNTJDMy42NTQzOCAyLjU5MzUyIDIuNTQ2MDcgMy43MDE4NSAyLjU0NjA3IDUuMDY0MjFDMi41NDYwNyA2LjQyNjU4IDMuNjU0MzggNy41MzQ4OSA1LjAxNjc1IDcuNTM0ODlDNi4zNzkxMiA3LjUzNDg5IDcuNDg3NDQgNi40MjY1OCA3LjQ4NzQ0IDUuMDY0MjFDNy40ODc0NCAzLjcwMTg1IDYuMzc5MTIgMi41OTM1MiA1LjAxNjc1IDIuNTkzNTJaTTUuMDE2NzUgNi42NDcxMkM0LjE0Mjk0IDYuNjQ3MTIgMy40MzM4NCA1LjkzODAzIDMuNDMzODQgNS4wNjQyMUMzLjQzMzg0IDQuMTkwNCA0LjE0Mjk0IDMuNDgxMyA1LjAxNjc1IDMuNDgxM0M1Ljg5MDU2IDMuNDgxMyA2LjU5OTY3IDQuMTkwNCA2LjU5OTY3IDUuMDY0MjFDNi41OTk2NyA1LjkzODAzIDUuODkwNTYgNi42NDcxMiA1LjAxNjc1IDYuNjQ3MTJaTTEwIDMuMDEyMjhDMTAgMS4zNDg0IDguNjUxNTkgMCA2Ljk4NzcxIDBIMy4wMTIyOUMxLjM0ODQxIDAgMCAxLjM0ODQgMCAzLjAxMjI4VjYuOTg3NzJDMCA4LjY1MTYgMS4zNDg0MSAxMCAzLjAxMjI5IDEwSDYuOTg3NzFDOC42NTE1OSAxMCAxMCA4LjY1MTYgMTAgNi45ODc3MlYzLjAxMjI4Wk05LjA1NjM5IDYuOTg3NzJDOS4wNTYzOSA4LjEyOTU0IDguMTI5NTMgOS4wNTYzOSA2Ljk4NzcxIDkuMDU2MzlIMy4wMTIyOUMxLjg3MDQ3IDkuMDU2MzkgMC45NDM2MDggOC4xMjk1NCAwLjk0MzYwOCA2Ljk4NzcyVjMuMDEyMjhDMC45NDM2MDggMS44NzA0NiAxLjg3MDQ3IDAuOTQzNjA4IDMuMDEyMjkgMC45NDM2MDhINi45ODc3MUM4LjEyOTUzIDAuOTQzNjA4IDkuMDU2MzkgMS44NzA0NiA5LjA1NjM5IDMuMDEyMjhWNi45ODc3MloiIGZpbGw9IndoaXRlIi8+PC9zdmc+"
+                                alt="Instagram">
+                        </a>
+                        <a target="_blank" href="https://www.youtube.com/channel/UCumAwJZJlkmc1BHjqg1CPCA">
+                            <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAiIGhlaWdodD0iNyIgdmlld0JveD0iMCAwIDEwIDciIGZpbGw9IiNGRkZGRkYiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxwYXRoIGQ9Ik0xMCAyLjE3NzAyQzEwIDAuOTc1MTU0IDkuMDI0ODUgMCA3LjgyMjk5IDBIMi4xNzcwMUMwLjk3NTE0OSAwIDAgMC45NzUxNTQgMCAyLjE3NzAyVjQuODIyOThDMCA2LjAyNDg0IDAuOTc1MTQ5IDcgMi4xNzcwMSA3SDcuODIyOTlDOS4wMjQ4NSA3IDEwIDYuMDI0ODQgMTAgNC44MjI5OFYyLjE3NzAyWk02LjQzNzg5IDMuNjMzNTRMNC4xODYzMyA0Ljg2OTU3QzQuMDg2OTUgNC45MjIzNiA0IDQuODUwOTMgNCA0LjczOTEzVjIuMjA0OTdDNCAyLjA5MzE3IDQuMDkwMDYgMi4wMjE3NCA0LjE4OTQ0IDIuMDc3NjRMNi40NTY1MyAzLjM3ODg4QzYuNTU1OTEgMy40MzQ3OCA2LjU0MDM3IDMuNTgwNzQgNi40Mzc4OSAzLjYzNjY1VjMuNjMzNTRaIiBmaWxsPSJ3aGl0ZSIvPjwvc3ZnPg=="
+                                alt="Youtube">
+                        </a>
+                    </div>
+                    <div class="last-updated">
+                        <span class="mx-auto mx-md-0">
+                            Last Updated:
+                            01-02-2025                        </span>
+                    </div>
+                </div>
+                <div class="col-md-9">
+                    <div class="row">
+                        <div class="col-md-2 mt-4 mt-md-0">
+                            <h5 class="fw-bold">Sewa Setu</h5>
+                            <div class="mt-2">
+                                <a href="https://sewasetu.assam.gov.in/site/about">About us</a>
+                            </div>
+                            <div class="mt-2">
+                                <a href="https://sewasetu.assam.gov.in/site/online">Services</a>
+                            </div>
+                            <div class="mt-2">
+                                <a href="https://sewasetu.assam.gov.in/spservices/apply-appeal/">Appeal</a>
+                            </div>
+                            <div class="mt-2">
+                                <a href="https://sewasetu.assam.gov.in/grm-v2">Grievance</a>
+                            </div>
+                            <div class="mt-2">
+                                <a href="https://sewasetu.assam.gov.in/dashboard">Dashboard</a>
+                            </div>
+                        </div>
+                        <div class="col-md-3 mt-4 mt-md-0">
+                            <h5 class="fw-bold">Quick Links</h5>
+                            <div class="mt-2">
+                                <a href="https://sewasetu.assam.gov.in/site/sitemap">Sitemap</a>
+                            </div>
+                            <div class="mt-2">
+                                <a href="https://sewasetu.assam.gov.in/site/all_policies">Privacy Policy</a>
+                            </div>
+                            <div class="mt-2">
+                                <a href="https://sewasetu.assam.gov.in/site/all_policies">Terms & Conditions</a>
+                            </div>
+                        </div>
+                        <div class="col-md-3 mt-4 mt-md-0">
+                            <h5 class="fw-bold">Important Links</h5>
+                            <div class="mt-2">
+                                <a href="https://assam.gov.in" target="_blank">Assam State Portal</a>
+                            </div>
+                            <div class="mt-2">
+                                <a href="https://cm.assam.gov.in" target="_blank">CM Portal</a>
+                            </div>
+                            <div class="mt-2">
+                                <a href="https://ascrtps.assam.gov.in"
+                                    target="_blank">RTPS State Commission</a>
+                            </div>
+                            <div class="mt-2">
+                                <a href="https://rti.gov.in" target="_blank">Right to Information</a>
+                            </div>
+                            <div class="mt-2">
+                                <a href="https://www.india.gov.in"
+                                    target="_blank">National Portal Of India</a>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mt-4 mt-md-0">
+                            <div class="fw-bold">
+                                <span class="total_visitors">
+                                    Total Visitors:
+                                    20343607                                </span>
+                            </div>
+                            <div class="mt-4">
+                                The content on this portal is owned and maintained by the AITEC & CSD Society, IT Department, Government of Assam.                            </div>
+                            <hr>
+                            <div class="fw-bold">
+                                Copyright &copy; 2025 -
+                                All Rights Reserved                                <span class="d-none d-md-inline">-</span>
+                                Government of Assam                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid wow fadeIn copyright" data-wow-delay="0.1s">
+        <div class="container py-3">
+            <div class="row">
+                <div class="col-md-4 text-center text-md-start mt-3 mt-md-0">
+                    <span class="fw-bold">Implementation Agency</span>
+                    <br>
+                    AITEC & CSD Society, IT Dept, Govt. of Assam                </div>
+                <div class="col-md-4 text-center mt-3 mt-md-0">
+                    <span class="fw-bold">Nodal Department</span>
+                    <br>
+                    <a href="https://it.assam.gov.in" target="_blank">
+                        Information Technology Department, Govt. of Assam                    </a>
+                </div>
+                <div class="col-md-4 text-center text-md-end mt-3 mt-md-0">
+                    <span class="fw-bold">Designed & Developed by</span>
+                    <br>
+                    <a href="https://assam.nic.in" target="_blank">
+                        National Informatics Centre, Assam                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="https://sewasetu.assam.gov.in/assets/site/sewasetu/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://sewasetu.assam.gov.in/assets/site/sewasetu/assets/lib/wow/wow.min.js"></script>
+<script src="https://sewasetu.assam.gov.in/assets/site/sewasetu/node_modules/jquery.easing/jquery.easing.min.js"></script>
+<script src="https://sewasetu.assam.gov.in/assets/site/sewasetu/node_modules/waypoints/lib/jquery.waypoints.min.js"></script>
+<script src="https://sewasetu.assam.gov.in/assets/site/sewasetu/assets/lib/owlcarousel/owl.carousel.min.js"></script>
+<script src="https://sewasetu.assam.gov.in/assets/site/sewasetu/assets/js/counterup.min.js"></script>
+<script src="https://sewasetu.assam.gov.in/assets/site/sewasetu/node_modules/lightbox/js/lightbox.min.js"></script>
+<script src="https://sewasetu.assam.gov.in/assets/site/sewasetu/assets/lib/fxss-rate/rate.min.js"></script>
+<script src="https://sewasetu.assam.gov.in/assets/site/sewasetu/assets/lib/fxss-rate/need/iconfont.js"></script>
+<!-- <script src="https://sewasetu.assam.gov.in/assets/site/theme1/plugins/jquery-lazy/jquery.lazy.min.js"></script> -->
+
+<!-- JS -->
+<script src="https://sewasetu.assam.gov.in/assets/site/sewasetu/assets/js/main.js"></script>
+
+<script src="https://sewasetu.assam.gov.in/assets/site/theme1/js/font-resize.js"></script>
+
+<!-- Chatbot -->
+<script src="https://sewasetu.assam.gov.in/assets/site/theme2/js/faq-bot.js"></script>
+
+<script type="text/javascript" src="https://sewasetu.assam.gov.in/assets/site/slick/slick.min.js"></script>
+<script src="https://sewasetu.assam.gov.in/assets/site/plugins/marquee/jquery.marquee.min.js"></script>
+
+<!-- Script removed from here and moved to head section -->
