@@ -504,28 +504,29 @@
                 <button class="search-btn" onclick="performSearch()">
                     <i class="fas fa-search"></i> Search
                 </button>
-            </div>
-        </div>
-
-        <div class="loading" id="loading">
-            <i class="fas fa-spinner"></i>
-            <p>Searching services...</p>
-        </div>
-
-        <div class="results-section" id="resultsSection">
-            <!-- Added a wrapper div to help with event isolation -->
-            <div class="results-modal-wrapper">
-                <div class="results-modal">
-                    <button id="modalCloseBtn" class="modal-close-btn" aria-label="Close search results" type="button">
-                        <i class="fas fa-times"></i>
-                    </button>
-                    <div class="results-header">
-                        <div class="results-count" id="resultsCount"></div>
+                
+                <!-- Loading indicator -->
+                <div class="loading" id="loading">
+                    <i class="fas fa-spinner"></i>
+                    <p>Searching services...</p>
+                </div>
+                
+                <!-- Results dropdown -->
+                <div class="results-section" id="resultsSection">
+                    <div class="results-modal-wrapper">
+                        <div class="results-modal">
+                            <button id="modalCloseBtn" class="modal-close-btn" aria-label="Close search results" type="button">
+                                <i class="fas fa-times"></i>
+                            </button>
+                            <div class="results-header">
+                                <div class="results-count" id="resultsCount"></div>
+                            </div>
+                            <div class="results-content">
+                                <div id="resultsContainer"></div>
+                            </div>
+                            <div class="pagination" id="pagination"></div>
+                        </div>
                     </div>
-                    <div class="results-content">
-                        <div id="resultsContainer"></div>
-                    </div>
-                    <div class="pagination" id="pagination"></div>
                 </div>
             </div>
         </div>

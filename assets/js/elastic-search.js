@@ -30,21 +30,17 @@ document.addEventListener('DOMContentLoaded', function() {
         searchTimeout = setTimeout(() => {
             if (this.value.trim().length > 2) {
                 performSearch();
+            } else {
+                hideResults();
             }
         }, 500);
     });
     
-    // Setup modal close functionality
-    const resultsSection = document.getElementById('resultsSection');
-    if (resultsSection) {
-        resultsSection.addEventListener('click', function(e) {
-            // Only close if the exact target is the backdrop
-            if (e.target === resultsSection) {
-                e.preventDefault();
-                hideResults();
-            }
-        });
-    }
+    // Click inside the search container shouldn't close dropdown
+    const searchContainer = document.querySelector('.search-container');
+    searchContainer.addEventListener('click', function(e) {
+        e.stopPropagation();
+    });
     
     // Setup close button functionality
     const closeBtn = document.getElementById('modalCloseBtn');
@@ -59,6 +55,16 @@ document.addEventListener('DOMContentLoaded', function() {
     // Close on escape key
     document.addEventListener('keydown', function(e) {
         if (e.key === 'Escape' && resultsSection && resultsSection.style.display === 'block') {
+            hideResults();
+        }
+    });
+    
+    // Close when clicking outside the search component
+    document.addEventListener('click', function(e) {
+        const resultsSection = document.getElementById('resultsSection');
+        const searchContainer = document.querySelector('.search-container');
+        
+        if (!searchContainer.contains(e.target) && !resultsSection.contains(e.target)) {
             hideResults();
         }
     });
@@ -120,9 +126,8 @@ function displayResults(data) {
     // Update pagination
     updatePagination(pagination);
 
-    // Show results and prevent body scroll
+    // Show results as dropdown
     resultsSection.style.display = 'block';
-    document.body.style.overflow = 'hidden';
 }
 
 function createServiceCard(service) {
@@ -146,8 +151,6 @@ function createServiceCard(service) {
             <span class="language-tab" onclick="switchLanguage(this, 'bn', ${JSON.stringify(service.fields.service).replace(/"/g, '&quot;')})">বাংলা</span>
         </div>
 
-        ${service.highlight ? createHighlights(service.highlight) : ''}
-
         <a href="https://sewasetu.assam.statedatacenter.in/${serviceLink}" target="_blank" class="service-link">
             <i class="fas fa-external-link-alt"></i>
             Apply for Service
@@ -155,19 +158,6 @@ function createServiceCard(service) {
     `;
 
     return card;
-}
-
-function createHighlights(highlights) {
-    let highlightHtml = '<div class="highlights">';
-    
-    Object.keys(highlights).forEach(key => {
-        highlights[key].forEach(highlight => {
-            highlightHtml += `<div class="highlight-item">${highlight}</div>`;
-        });
-    });
-    
-    highlightHtml += '</div>';
-    return highlightHtml;
 }
 
 function switchLanguage(element, lang, serviceData) {
@@ -233,7 +223,6 @@ function hideLoading() {
 function hideResults() {
     const resultsSection = document.getElementById('resultsSection');
     resultsSection.style.display = 'none';
-    document.body.style.overflow = '';
 }
 
 function showNoResults() {
@@ -254,12 +243,6 @@ function showNoResults() {
     
     // Show results section
     resultsSection.style.display = 'block';
-    document.body.style.overflow = 'hidden';
-    
-    // Trigger animation with small delay
-    setTimeout(() => {
-        resultsSection.classList.add('show');
-    }, 10);
 }
 
 function showError() {
@@ -280,10 +263,4 @@ function showError() {
     
     // Show results section
     resultsSection.style.display = 'block';
-    document.body.style.overflow = 'hidden';
-    
-    // Trigger animation with small delay
-    setTimeout(() => {
-        resultsSection.classList.add('show');
-    }, 10);
 }
